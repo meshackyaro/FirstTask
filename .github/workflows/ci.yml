@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t meshackyaro/FirstTask:${{ github.sha }} .
+        run: docker build -t meshackyaro/firsttask:${{ github.sha }} .
 
       - name: Push Docker image to Docker Hub
-        run: docker push meshackyaro/FirstTask:${{ github.sha }}
+        run: docker push meshackyaro/firsttask:${{ github.sha }}
